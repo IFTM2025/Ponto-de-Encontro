@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <title>Todos os Itens</title>
+
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <!-- Menu de Navegação Lateral -->
+        <nav class="nav">
+
+            <!-- Cabeçalho do Menu de Navegação Lateral -->
+            <div class="nav-header">
+
+                <div class="nav-header-logo">
+                    <img src="assets/images/PE.png" alt="Logo Ponto de Encontro" height="50px" width="50px">
+
+                </div>
+                <div class="nav-header-name">
+
+                    <div class="nav-header-name-first">Ponto de Encontro</div>
+                    <div class="nav-header-name-second">Perdeu ou achou? A gente te ajuda!</div>
+
+                </div>
+
+            </div>
+
+
+            <div class="nav-center">
+
+                <!-- Links de Navegação do Menu de Navegação Lateral -->
+                <div class="navegation">
+
+                    <div class="navegation-header">
+                        <h2>NAVEGAÇÃO</h2>
+                    </div>
+
+                    <div class="navegation-links">
+                        <ul>
+                            <li id="inicio_icon">
+                                <a href="index.html"><img src="assets/images/casa.png" alt="Ícone de início, casa"
+                                        class="icon">Início</a>
+                            </li>
+
+                            <li id="consulta_icon" class="active">
+                                <a href="busca.html"><img src="assets/images/todos.png" alt="Ícone de lupa"
+                                        class="icon">Todos os Itens</a>
+                            </li>
+
+                            <li id="cadastro_icon">
+                                <a href="cadastro.html"><img src="assets/images/mais.png"
+                                        alt="ícone de cadastro, sinal de mais" class="icon">Cadastrar Item</a>
+                            </li>
+
+                            <li id="ranking_icon">
+                                <a href="ranking.html"><img src="assets/images/Ranking.png"
+                                        alt="Ícone de ranking, troféu" class="icon">Ranking</a>
+                            </li>
+
+                            <li id="sobre_icon">
+                                <a href="sobre.html"><img src="assets/images/comunidade.png"
+                                        alt="ícone de comunidade, pessoas" class="icon">Sobre Nós</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- Status da Comunidade IFTM Campus Uberaba P.T -->
+
+                <div class="status">
+
+                    <div class="status-header">
+                        <h2>STATUS DA COMUNIDADE</h2>
+                    </div>
+
+                    <div class="status-info">
+                        <div class="status-info-itens-active">
+                            <div class="status-info-itens-active-title">Itens Ativos</div>
+                            <div class="status-info-itens-active-number">--</div>
+                        </div>
+                        <div class="status-info-delivered">
+                            <div class="status-info-delivered-title">Devolvidos</div>
+                            <div class="status-info-delivered-number">--</div>
+                        </div>
+                        <div class="status-info-guardian">
+                            <div class="status-info-guardian-title">Guardiões</div>
+                            <div class="status-info-guardian-number">--</div>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Rodapé do Menu de Navegação Lateral -->
+
+            <div class="nav-footer">
+                <div class="nav-footer-icon"> <img src="assets/images/IFTM Logo.png"
+                        alt="IFTM - Campus Uberaba Parque Tecnológico logo">
+
+                </div>
+                <div class="nav-footer-info">
+                    <div class="nav-footer-info-title">Feito por Lorena, Lorrayne e Matheus Lemes</div>
+                    <div class="nav-footer-info-subtitle">IFTM P.T - TDS 1° A</div>
+                </div>
+
+            </div>
+
+
+        </nav>
+
+        <main class="site">
+
+
+
+
+
+
+
+            <!-- Container principal -->
+            <div class="todos-itens-page">
+
+                <!-- Cabeçalho -->
+                <div class="todos-header">
+                    <div class="todos-header-text">
+                        <div class="todos-title">Todos os Itens</div>
+                        <div class="todos-subtitle">Explore nossa coleção completa de itens encontrados e perdidos</div>
+                    </div>
+                    <div class="todos-status">
+                        <div class="todos-status-item encontrados">
+                            <div class="todos-status-item number">0</div>
+                            <div class="todos-status filter">Encontrados</div>
+                        </div>
+                        <div class="todos-status-item procurados">
+                            <div class="todos-status-item number">0</div>
+                            <div class="todos-status filter">Procurados</div>
+                        </div>
+                        <div class="todos-status-item total">
+                            <div class="todos-status-item number">0</div>
+                            <div class="todos-status filter">Total</div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Filtros -->
+                <div class="todos-filters">
+                    <div class="todos-filters-top">
+                        <a href="todos.html"><div class="todos-filter-btn">🗃️ Todos</div></a>
+                        <a href="eletronicos.html"><div class="todos-filter-btn">📱 Eletrônicos</div></a>
+                        <a href="acessorios.html"><div class="todos-filter-btn">🎧 Acessórios</div></a>
+                        <a href="documentos.html"><div class="todos-filter-btn">📄 Documentos</div></a>
+                        <a href="material.html"><div class="todos-filter-btn">📒 Material Escolar</div></a>
+                        <a href="roupas.html"><div class="todos-filter-btn">👚 Roupas</div></a>
+                        <a href="outros.html"><div class="todos-filter-btn">❔ Outros</div></a>
+                    </div>
+                    <div class="todos-filters-bottom">
+                        <a href="status.html"><div class="todos-filter-btn">Todos os Status</div></a>
+                        <a href="encontrado.html"><div class="todos-filter-btn">Encontrado</div></a>
+                        <a href="procurado.html"><div class="todos-filter-btn">Procurado</div></a>
+                        <a href="devolvido.html"><div class="todos-filter-btn">Devolvido</div></a>
+                    </div>
+                </div>
+            </div>
+
+
+                       <div class="todos-atualization">
+                <div class="todos-mostrando">
+                    <p>Mostrando <b>0</b> itens</p>
+                </div>
+                <div class="todos-ultima-atualizacao">
+                    <p>Última atualização: 12/09/2025 às 7:23</p>
+                </div>
+            </div>
+
+            <!-- Grid de Cards -->
+            <div class="todos-grid">
+
+                <!-- Card 1 -->
+                <div class="todos-card">
+                    <div class="todos-card-img">
+                        <img src="assets/images/Caderno Stitch.png" alt="Caderno do Stitch">
+                        <div class="todos-badge encontrado">Exemplo</div>
+                    </div>
+                    <div class="todos-card-body">
+                        <div class="todos-card-title">Caderno do Stitch</div>
+                        <div class="todos-card-desc">Cor preta, marca conhecida</div>
+                        <div class="todos-card-info">📍 Achados e Perdidos • Hoje</div>
+                    </div>
+                    <div class="todos-card-footer">
+                        <!-- MODIFICAÇÃO AQUI -->
+                        <a href="mailto:pontoencontro.iftm@gmail.com?subject=Interesse no item: Exemplo" class="todos-card-btn hover-text-change" target="_blank">
+                            <span>Ver Detalhes</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="todos-card">
+                    <div class="todos-card-img">
+                        <img src="assets/images/garrafa.png" alt="garrafa">
+                        <div class="todos-badge encontrado">Exemplo</div>
+                    </div>
+                    <div class="todos-card-body">
+                        <div class="todos-card-title">Garrafa</div>
+                        <div class="todos-card-desc">Cor preta e branca, marca porto de Galinhas </div>
+                        <div class="todos-card-info">📍  Achados e Perdidos • Hoje</div>
+                    </div>
+                    <div class="todos-card-footer">
+                        <!-- MODIFICAÇÃO AQUI -->
+                        <a href="mailto:pontoencontro.iftm@gmail.com?subject=Interesse no item: Exemplo" class="todos-card-btn hover-text-change">
+                            <span>Ver Detalhes</span>
+                        </a>
+                    </div>
+                </div>
+
+
+  <!-- Card 3 -->
+                <div class="todos-card">
+                    <div class="todos-card-img">
+                        <img src="assets/images/garrafa de metal.png" alt="garrafa">
+                        <div class="todos-badge encontrado">Exemplo</div>
+                    </div>
+                    <div class="todos-card-body">
+                        <div class="todos-card-title">Garrafa</div>
+                        <div class="todos-card-desc">Garrafa metalica </div>
+                        <div class="todos-card-info">📍  Achados e Perdidos • Hoje</div>
+                    </div>
+                    <div class="todos-card-footer">
+                        <!-- MODIFICAÇÃO AQUI -->
+                        <a href="mailto:pontoencontro.iftm@gmail.com?subject=Interesse no item: Exemplo" class="todos-card-btn hover-text-change">
+                            <span>Ver Detalhes</span>
+                        </a>
+                    </div>
+                </div>
+
+
+<!-- Card 4 -->
+                <div class="todos-card">
+                    <div class="todos-card-img">
+                        <img src="assets/images/estojo.png" alt="garrafa">
+                        <div class="todos-badge encontrado">Exemplo</div>
+                    </div>
+                    <div class="todos-card-body">
+                        <div class="todos-card-title">Estojo</div>
+                        <div class="todos-card-desc">Estojo  preto</div>
+                        <div class="todos-card-info">📍  Achados e Perdidos • Hoje</div>
+                    </div>
+                    <div class="todos-card-footer">
+                        <!-- MODIFICAÇÃO AQUI -->
+                        <a href="mailto:pontoencontro.iftm@gmail.com?subject=Interesse no item: Exemplo" class="todos-card-btn hover-text-change">
+                            <span>Ver Detalhes</span>
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+                <!-- Adicione mais cards com a mesma estrutura de botão se precisar -->
+
+            </div>
+
+            <footer>
+                <div class="footer-container">
+
+
+                    <div class="footer-about-column">
+                        <div class="footer-logomarca">
+                            <div class="footer-header-logo">
+                                <img src="assets/images/PE.png" alt="Logo Ponto de Encontro" height="50px" width="50px">
+
+                            </div>
+                            <div class="footer-header-name">
+
+                                <div class="footer-header-name-first">Ponto de Encontro</div>
+                                <div class="footer-header-name-second">Perdeu ou achou? A gente te ajuda!</div>
+
+                            </div>
+                        </div>
+                            <p class="footer-description">
+                                Conectando as pessoas do nosso Campus através de itens devolvidos. Cada item encontrado
+                                e devolvido é uma
+                                história de esperança renovada.
+                            </p>
+                            <div class="social-icons">
+                                <a href="https://www.instagram.com/pontoencontro.iftm" aria-label="Instagram"
+                                    target="_blank"><img src="assets/images/Instagram_logo_2022.svg" alt="Instagram"
+                                        height="50px"></a>
+                                <a href="https://chat.whatsapp.com/BEcX9Fn1fViDlJPxzQEhLt?mode=ems_copy_t"
+                                    aria-label="WhatsApp" target="_blank"><img src="assets/images/WhatsApp.svg.webp"
+                                        alt="WhatsApp" height="50px"></a>
+                            </div>
+                        </div>
+
+                        <!-- Links mais rápidos -->
+                        <div class="footer-column">
+                            <h3>Links Rápidos</h3>
+                            <ul class="footer-links">
+                                <li><a href="busca.html">Buscar Itens</a></li>
+                                <li><a href="cadastro.html">Cadastrar Item</a></li>
+                                <li><a href="ranking.html">Ranking</a></li>
+                                <li><a href="sobre.html">Sobre Nós</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Contatos -->
+                        <div class="footer-column">
+                            <h3>Contato</h3>
+                            <ul class="footer-contact">
+                                <li>
+                                    <img src="assets/images/contato.png" alt="ícone de Email">
+                                    <span>pontoencontro.iftm@gmail.com</span>
+                                </li>
+                                <li>
+                                    <img src="assets/images/celular.png" alt="ícone de telefone">
+                                    <span>(34) 8862-9458 ou 34 9822-4229</span>
+                                </li>
+                                <li>
+                                    <img src="assets/images/local.png" alt="ícone de localização">
+                                    <span>IFTM Campus Uberaba Parque Tecnológico</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="footer-bottom">
+                        <p>&copy; 2025 Ponto de Encontro. Todos os direitos reservados.</p>
+                    </div>
+            </footer>
+            
+        </main>
+    </div>
+
+</body>
+</html>

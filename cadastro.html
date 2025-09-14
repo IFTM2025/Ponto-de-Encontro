@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Cadastro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="main-container">
+
+        <nav class="nav">
+
+            <!-- Cabeçalho do Menu de Navegação Lateral -->
+            <div class="nav-header">
+
+                <div class="nav-header-logo">
+                    <img src="assets/images/PE.png" alt="Logo Ponto de Encontro" height="50px" width="50px">
+
+                </div>
+                <div class="nav-header-name">
+
+                    <div class="nav-header-name-first">Ponto de Encontro</div>
+                    <div class="nav-header-name-second">Perdeu ou achou? A gente te ajuda!</div>
+
+                </div>
+
+            </div>
+
+
+            <div class="nav-center">
+
+                <!-- Links de Navegação do Menu de Navegação Lateral -->
+                <div class="navegation">
+
+                    <div class="navegation-header">
+                        <h2>NAVEGAÇÃO</h2>
+                    </div>
+
+                    <div class="navegation-links">
+                        <ul>
+                            <li id="inicio_icon">
+                                <a href="index.html"><img src="assets/images/casa.png" alt="Ícone de início, casa"
+                                        class="icon">Início</a>
+                            </li>
+
+                            <li id="consulta_icon">
+                                <a href="busca.html"><img src="assets/images/todos.png" alt="Ícone de lupa"
+                                        class="icon">Todos os Itens</a>
+                            </li>
+
+                            <li id="cadastro_icon" class="active">
+                                <a href="cadastro.html"><img src="assets/images/mais.png"
+                                        alt="ícone de cadastro, sinal de mais" class="icon">Cadastrar Item</a>
+                            </li>
+
+                            <li id="ranking_icon">
+                                <a href="ranking.html"><img src="assets/images/Ranking.png"
+                                        alt="Ícone de ranking, troféu" class="icon">Ranking</a>
+                            </li>
+
+                            <li id="sobre_icon">
+                                <a href="sobre.html"><img src="assets/images/comunidade.png"
+                                        alt="ícone de comunidade, pessoas" class="icon">Sobre Nós</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- Status da Comunidade IFTM Campus Uberaba P.T -->
+
+                <div class="status">
+
+                    <div class="status-header">
+                        <h2>STATUS DA COMUNIDADE</h2>
+                    </div>
+
+                    <div class="status-info">
+                        <div class="status-info-itens-active">
+                            <div class="status-info-itens-active-title">Itens Ativos</div>
+                            <div class="status-info-itens-active-number">--</div>
+                        </div>
+                        <div class="status-info-delivered">
+                            <div class="status-info-delivered-title">Devolvidos</div>
+                            <div class="status-info-delivered-number">--</div>
+                        </div>
+                        <div class="status-info-guardian">
+                            <div class="status-info-guardian-title">Guardiões</div>
+                            <div class="status-info-guardian-number">--</div>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Rodapé do Menu de Navegação Lateral -->
+
+            <div class="nav-footer">
+                <div class="nav-footer-icon"> <img src="assets/images/IFTM Logo.png"
+                        alt="IFTM - Campus Uberaba Parque Tecnológico logo">
+
+                </div>
+                <div class="nav-footer-info">
+                    <div class="nav-footer-info-title">Feito por Lorena, Lorrayne e Matheus Lemes</div>
+                    <div class="nav-footer-info-subtitle">IFTM P.T - TDS 1° A</div>
+                </div>
+
+            </div>
+
+
+        </nav>
+
+
+
+        <div class="form-wrapper">
+            <!-- Rádios para controlar os passos (a mágica acontece aqui) -->
+            <input type="radio" name="form-step" id="step-1" checked>
+            <input type="radio" name="form-step" id="step-2">
+            <input type="radio" name="form-step" id="step-3">
+            <input type="radio" name="form-step" id="step-4">
+
+            <form action="https://formsubmit.co/pontoencontro.iftm@gmail.com" method="POST"
+                enctype="multipart/form-data">
+                <!-- Informações para o FormSubmit -->
+                <input type="hidden" name="_next" value="URL_DA_SUA_PAGINA_DE_OBRIGADO.html">
+                <input type="hidden" name="_subject" value="Novo Item Encontrado! - Ponto de Encontro">
+
+                <div class="form-header">
+                    <div class="plus-icon"><img src="assets/images/mais.png" alt="" height="25px"></div>
+                    <h1>Cadastrar Item Encontrado</h1>
+                    <p>Você encontrou algo que é importante para você ou que pode ser importante para alguém?
+                        Vamos ajudar a conectar os itens com as pessoas e fazer de você um
+                        <strong>Guardião</strong> da nossa comunidade!
+                    </p>
+                </div>
+
+                <div class="stepper">
+                    <div class="step" id="step-label-1"><span>1</span> Categoria</div>
+                    <div class="step" id="step-label-2"><span>2</span> Detalhes</div>
+                    <div class="step" id="step-label-3"><span>3</span> Localização</div>
+                    <div class="step" id="step-label-4"><span>4</span> Confirmação</div>
+                </div>
+
+                <!-- Passo 1: Categoria -->
+                <div class="form-step" id="form-step-1">
+                    <h2>Que tipo de item você encontrou?</h2>
+                    <div class="category-grid">
+                        <input type="radio" name="categoria" id="cat-eletronicos" value="Eletrônicos" required>
+                        <label for="cat-eletronicos" class="category-card">
+                            <div class="icon">📱</div>
+                            <strong>Eletrônicos</strong>
+                            <span>Celulares, tablets, fones</span>
+                        </label>
+
+                        <input type="radio" name="categoria" id="cat-acessorios" value="Acessórios">
+                        <label for="cat-acessorios" class="category-card">
+                            <div class="icon">🎧</div>
+                            <strong>Acessórios</strong>
+                            <span>Fones, carregadores, cabos</span>
+                        </label>
+
+                        <input type="radio" name="categoria" id="cat-documentos" value="Documentos">
+                        <label for="cat-documentos" class="category-card">
+                            <div class="icon">📄</div>
+                            <strong>Documentos</strong>
+                            <span>RG, carteiras, cartões</span>
+                        </label>
+
+                        <input type="radio" name="categoria" id="cat-material" value="Material Escolar">
+                        <label for="cat-material" class="category-card">
+                            <div class="icon">📒</div>
+                            <strong>Material Escolar</strong>
+                            <span>Cadernos, livros, canetas</span>
+                        </label>
+
+                        <input type="radio" name="categoria" id="cat-chaves" value="Chaves">
+                        <label for="cat-chaves" class="category-card">
+                            <div class="icon">🔑</div>
+                            <strong>Chaves</strong>
+                            <span>Chaves, chaveiros</span>
+                        </label>
+
+                        <input type="radio" name="categoria" id="cat-roupas" value="Roupas">
+                        <label for="cat-roupas" class="category-card">
+                            <div class="icon">👚</div>
+                            <strong>Roupas</strong>
+                            <span>Casacos, camisetas, bonés</span>
+                        </label>
+
+                        <input type="radio" name="categoria" id="cat-bolsas" value="Bolsas">
+                        <label for="cat-bolsas" class="category-card">
+                            <div class="icon">🎒</div>
+                            <strong>Bolsas</strong>
+                            <span>Mochilas, bolsas, estojos</span>
+                        </label>
+
+                        <input type="radio" name="categoria" id="cat-outros" value="Outros">
+                        <label for="cat-outros" class="category-card">
+                            <div class="icon">❔</div>
+                            <strong>Outros</strong>
+                            <span>Outros itens</span>
+                        </label>
+                    </div>
+                    <div class="form-navigation">
+                        <label for="step-2" class="btn btn-primary">Continuar →</label>
+                    </div>
+                </div>
+
+                <!-- Passo 2: Detalhes -->
+                <div class="form-step" id="form-step-2">
+                    <h2>Conte-nos mais sobre o item</h2>
+                    <div class="form-group-grid">
+                        <div class="form-group file-upload">
+                            <label for="foto">Foto do Item * <small>(Ajuda muito na
+                                    identificação!)</small></label>
+                            <label for="foto" class="file-dropzone">
+                                <span>✔️</span>
+                                <p>Clique para adicionar uma foto<br>ou arraste e solte aqui</p>
+                                <small>JPG, PNG até 5MB</small>
+                            </label>
+                            <input type="file" id="foto" name="attachment" accept="image/png, image/jpeg">
+                        </div>
+                        <div class="form-group-column">
+                            <div class="form-group">
+                                <label for="nome_item">Nome/Tipo do Item *</label>
+                                <input type="text" id="nome_item" name="nome_item"
+                                    placeholder="Ex: iPhone 13 Pro, Mochila preta, Chaves com chaveiro" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="marca_modelo">Marca/Modelo</label>
+                                <input type="text" id="marca_modelo" name="marca_modelo"
+                                    placeholder="Ex: Apple, Samsung, Nike...">
+                            </div>
+                            <div class="form-group">
+                                <label for="cor">Cor Principal *</label>
+                                <select id="cor" name="cor" required>
+                                    <option value="" disabled selected>Selecione a cor</option>
+                                    <option value="Preto">Preto</option>
+                                    <option value="Branco">Branco</option>
+                                    <option value="Azul">Azul</option>
+                                    <option value="Vermelho">Vermelho</option>
+                                    <option value="Verde">Verde</option>
+                                    <option value="Amarelo">Amarelo</option>
+                                    <option value="Rosa">Rosa</option>
+                                    <option value="Roxo">Roxo</option>
+                                    <option value="Marrom">Marrom</option>
+                                    <option value="Cinza">Cinza</option>
+                                    <option value="Multicolorido">Multicolorido</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="caracteristicas">Características Especiais <small>(Detalhes que ajudam na
+                                identificação)</small></label>
+                        <textarea id="caracteristicas" name="caracteristicas" rows="3"
+                            placeholder="Ex: Tem uma rachadura na tela, adesivo do Batman, capa transparente, nome gravado..."></textarea>
+                    </div>
+                    <div class="form-navigation">
+                        <label for="step-1" class="btn btn-secondary">← Voltar</label>
+                        <label for="step-3" class="btn btn-primary">Continuar →</label>
+                    </div>
+                </div>
+
+                <!-- Passo 3: Localização -->
+                <div class="form-step" id="form-step-3">
+                    <h2>Onde você encontrou o item?</h2>
+                    <div class="location-grid">
+                        <div class="map-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!4v1757636886990!6m8!1m7!1sSq7j0wdJool_V-qpgk1p5A!2m2!1d-19.77044071175074!2d-47.94844371598081!3f4.5734015!4f0!5f0.7820865974627469"
+                                width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="location-fields">
+                            <div class="form-group">
+                                <label for="area_campus">Área do Campus *</label>
+                                <select id="area_campus" name="area_campus" required>
+                                    <option value="" disabled selected>Selecione a área</option>
+                                    <option value="Biblioteca">Biblioteca</option>
+                                    <option value="Cantina">Cantina</option>
+                                    <option value="Laboratórios">Laboratórios</option>
+                                    <option value="Pátio Central">Pátio Central</option>
+                                    <option value="Salas de Aula">Salas de Aula</option>
+                                    <option value="Banheiros">Banheiros</option>
+                                    <option value="Estacionamento">Estacionamento</option>
+                                    <option value="Quadra de Esportes">Quadra de Esportes</option>
+                                    <option value="Secretaria">Secretaria</option>
+                                    <option value="Outros">Outros</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="local_especifico">Local Específico</label>
+                                <input type="text" id="local_especifico" name="local_especifico"
+                                    placeholder="Ex: Mesa 3 da biblioteca, próximo ao bebedouro">
+                            </div>
+                            <div class="form-group">
+                                <label for="data_encontrado">Quando você encontrou? *</label>
+                                <input type="date" id="data_encontrado" name="data_encontrado" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="horario_aproximado">Horário Aproximado</label>
+                                <select id="horario_aproximado" name="horario_aproximado">
+                                    <option value="" disabled selected>Selecione o período</option>
+                                    <option value="Manhã (7h-12h)">Manhã (7h-12h)</option>
+                                    <option value="Tarde (12h-18h)">Tarde (12h-18h)</option>
+                                    <option value="Noite (18h-23h)">Noite (18h-23h)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="info_adicionais">Informações Adicionais</label>
+                        <textarea id="info_adicionais" name="info_adicionais" rows="2"
+                            placeholder="Ex: Estava junto com outros itens, condições do tempo..."></textarea>
+                    </div>
+                    <div class="form-navigation">
+                        <label for="step-2" class="btn btn-secondary">← Voltar</label>
+                        <label for="step-4" class="btn btn-primary">Continuar →</label>
+                    </div>
+                </div>
+
+                <!-- Passo 4: Confirmação -->
+                <div class="form-step" id="form-step-4">
+                    <div class="confirmation-box">
+                        <h2>Quase lá!</h2>
+                        <p>Revise mentalmente as informações. Se estiver tudo certo, clique em enviar para
+                            cadastrar o item.</p>
+                        <p>Muito obrigado por sua colaboração em manter nossa comunidade mais segura e
+                            organizada!</p>
+                    </div>
+                    <div class="form-navigation">
+                        <label for="step-3" class="btn btn-secondary">← Voltar</label>
+                        <button type="submit" class="btn btn-primary">✓ Enviar Cadastro</button>
+                    </div>
+                </div>
+            </form>
+
+
+            <footer>
+                <div class="footer-container">
+
+
+                    <div class="footer-about-column">
+                        <div class="footer-logomarca">
+                            <div class="footer-header-logo">
+                                <img src="assets/images/PE.png" alt="Logo Ponto de Encontro" height="50px" width="50px">
+
+                            </div>
+                            <div class="footer-header-name">
+
+                                <div class="footer-header-name-first">Ponto de Encontro</div>
+                                <div class="footer-header-name-second">Perdeu ou achou? A gente te ajuda!</div>
+
+                            </div>
+                        </div>
+                        <p class="footer-description">
+                            Conectando as pessoas do nosso Campus através de itens devolvidos. Cada item encontrado
+                            e devolvido é uma
+                            história de esperança renovada.
+                        </p>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/pontoencontro.iftm" aria-label="Instagram"
+                                target="_blank"><img src="assets/images/Instagram_logo_2022.svg" alt="Instagram"
+                                    height="50px"></a>
+                            <a href="https://chat.whatsapp.com/BEcX9Fn1fViDlJPxzQEhLt?mode=ems_copy_t"
+                                aria-label="WhatsApp" target="_blank"><img src="assets/images/WhatsApp.svg.webp"
+                                    alt="WhatsApp" height="50px"></a>
+                        </div>
+                    </div>
+
+                    <!-- Links mais rápidos -->
+                    <div class="footer-column">
+                        <h3>Links Rápidos</h3>
+                        <ul class="footer-links">
+                            <li><a href="busca.html">Buscar Itens</a></li>
+                            <li><a href="cadastro.html">Cadastrar Item</a></li>
+                            <li><a href="ranking.html">Ranking</a></li>
+                            <li><a href="sobre.html">Sobre Nós</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contatos -->
+                    <div class="footer-column">
+                        <h3>Contato</h3>
+                        <ul class="footer-contact">
+                            <li>
+                                <img src="assets/images/contato.png" alt="ícone de Email">
+                                <span>pontoencontro.iftm@gmail.com</span>
+                            </li>
+                            <li>
+                                <img src="assets/images/celular.png" alt="ícone de telefone">
+                                <span>(34) 8862-9458 ou 34 9822-4229</span>
+                            </li>
+                            <li>
+                                <img src="assets/images/local.png" alt="ícone de localização">
+                                <span>IFTM Campus Uberaba Parque Tecnológico</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Ponto de Encontro. Todos os direitos reservados.</p>
+                </div>
+            </footer>
+        </div>
+
+
+</body>
+
+</html>
