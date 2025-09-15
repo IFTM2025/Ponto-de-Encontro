@@ -2264,25 +2264,33 @@ textarea {
 
 /* =================================================================== */
 
-@media (max-width: 1268px) {
+/* =================================================================== */
+/* ===== RESPONSIVIDADE ===== */
+/* =================================================================== */
 
-      .nav {
+/* Telas grandes mas com menu escondido */
+@media (max-width: 1268px) {
+  .nav {
     display: none;
   }
-    .site, 
-  .form-wrapper, 
-  .todos-itens-page, 
+
+  .site,
+  .form-wrapper,
+  .todos-itens-page,
   .ranking-three {
-    margin-left: 0;
+    margin-left: 0 !important;
     padding: 20px;
     max-width: 100%;
+    width: 100%;
   }
 }
-@media (max-width: 992px) {
 
-      .nav {
+/* Até 992px (notebooks/tablets) */
+@media (max-width: 992px) {
+  .nav {
     display: none;
   }
+
   /* Layout principal */
   .layout {
     grid-template-columns: 1fr;
@@ -2313,30 +2321,32 @@ textarea {
   .ranking-podium-container {
     flex-direction: column;
   }
-    .site, 
-  .form-wrapper, 
-  .todos-itens-page, 
+
+  .site,
+  .form-wrapper,
+  .todos-itens-page,
   .ranking-three {
-    margin-left: 0;
+    margin-left: 0 !important;
     padding: 20px;
     max-width: 100%;
+    width: 100%;
   }
 }
 
-/* Telas pequenas (até 768px) */
+/* Até 768px (celulares médios) */
 @media (max-width: 768px) {
-  /* Esconde menu lateral e ajusta conteúdo */
   .nav {
     display: none;
   }
 
-  .site, 
-  .form-wrapper, 
-  .todos-itens-page, 
+  .site,
+  .form-wrapper,
+  .todos-itens-page,
   .ranking-three {
-    margin-left: 0;
+    margin-left: 0 !important;
     padding: 20px;
     max-width: 100%;
+    width: 100%;
   }
 
   /* Outdoor */
@@ -2374,7 +2384,7 @@ textarea {
   }
 }
 
-/* Celulares pequenos (até 480px) */
+/* Até 480px (celulares pequenos) */
 @media (max-width: 480px) {
   /* Textos menores */
   .header .title {
@@ -2392,7 +2402,7 @@ textarea {
   /* Grid de cards */
   .recent-activities-grid,
   .todos-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
 
   /* Cards menores */
@@ -2408,9 +2418,14 @@ textarea {
   footer {
     padding: 40px 15px;
   }
+}
 
-
-
+/* Correção global para evitar corte lateral */
+@media (max-width: 992px) {
+  body, html {
+    overflow-x: hidden;
+  }
+}
 
 
 
