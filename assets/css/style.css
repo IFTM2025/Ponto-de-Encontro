@@ -2261,9 +2261,28 @@ textarea {
 
 /* =================================================================== */
 /* ===== RESPONSIVIDADE ===== */
+
 /* =================================================================== */
 
 @media (max-width: 1268px) {
+
+      .nav {
+    display: none;
+  }
+    .site, 
+  .form-wrapper, 
+  .todos-itens-page, 
+  .ranking-three {
+    margin-left: 0;
+    padding: 20px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 992px) {
+
+      .nav {
+    display: none;
+  }
   /* Layout principal */
   .layout {
     grid-template-columns: 1fr;
@@ -2293,6 +2312,14 @@ textarea {
   /* Ranking */
   .ranking-podium-container {
     flex-direction: column;
+  }
+    .site, 
+  .form-wrapper, 
+  .todos-itens-page, 
+  .ranking-three {
+    margin-left: 0;
+    padding: 20px;
+    max-width: 100%;
   }
 }
 
@@ -2381,6 +2408,7 @@ textarea {
   footer {
     padding: 40px 15px;
   }
+
 
 
 
