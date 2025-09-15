@@ -2446,6 +2446,7 @@ textarea {
 
   .recent-category-card {
     padding: 15px;
+    width: 80%;
   }
 
   /* Botões maiores */
@@ -2462,6 +2463,7 @@ textarea {
     padding: 30px 15px;
   }
 }
+
 
 
 
