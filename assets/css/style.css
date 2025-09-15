@@ -2271,9 +2271,9 @@ textarea {
 /* Telas grandes mas com menu escondido */
 @media (max-width: 1268px) {
   .site {
-    margin-left: 0 !important;   /* remove o empurrão lateral */
-    width: 100% !important;
-    max-width: 100% !important;
+    margin-left: 0;   /* remove o empurrão lateral */
+    width: 100;
+    max-width: 100%;
     padding: 0 15px;             /* adiciona respiro nas laterais */
     box-sizing: border-box;      /* garante que padding não estoure largura */
   }
@@ -2286,8 +2286,8 @@ textarea {
   .recent-activities-grid,
   .site-info,
   .quick-actions-box {
-    grid-template-columns: 1fr !important;
-    width: 100% !important;
+    grid-template-columns: 1fr;
+    width: 100%;
   }
 
   /* Botão "Todas Categorias" centralizado */
@@ -2340,7 +2340,7 @@ textarea {
   .form-wrapper,
   .todos-itens-page,
   .ranking-three {
-    margin-left: 0 !important;
+    margin-left: 0;
     padding: 20px;
     max-width: 100%;
     width: 100%;
@@ -2357,7 +2357,7 @@ textarea {
   .form-wrapper,
   .todos-itens-page,
   .ranking-three {
-    margin-left: 0 !important;
+    margin-left: 0;
     padding: 20px;
     max-width: 100%;
     width: 100%;
@@ -2416,7 +2416,7 @@ textarea {
   /* Grid de cards */
   .recent-activities-grid,
   .todos-grid {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: 1fr;
   }
 
   /* Cards menores */
@@ -2440,6 +2440,7 @@ textarea {
     overflow-x: hidden;
   }
 }
+
 
 
 
