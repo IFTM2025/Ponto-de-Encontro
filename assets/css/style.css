@@ -2336,6 +2336,8 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
+      justfiy-self:center;
+      align-self:center;
     gap: 20px;
     width: 80%;
   }
@@ -2352,7 +2354,7 @@ textarea {
   .search-box,
   .register-box,
   .all-itens-box,
-  .guardians-box {
+  .guardians-box, .footer {
     width: 80%;
   }
 
@@ -2463,6 +2465,7 @@ textarea {
     padding: 30px 15px;
   }
 }
+
 
 
 
