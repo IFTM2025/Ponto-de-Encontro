@@ -2264,83 +2264,124 @@ textarea {
 /* =================================================================== */
 
 @media (max-width: 1268px) {
+  /* Layout principal */
+  .layout {
+    grid-template-columns: 1fr;
+  }
 
-    /* 1. Esconde o menu lateral para fora da tela */
-    .nav {
-       display:none;
-    }
+  /* Outdoor */
+  .outdoor-info {
+    margin: 0 20px;
+    font-size: 0.95rem;
+  }
 
-    /* 3. Faz o conteúdo principal ocupar a tela inteira */
-    .site {
-        margin-left: 0;
-        padding: 20px;
-        padding-top: 80px;
-        /* Adiciona espaço no topo para o botão não sobrepor o título */
-    }
+  /* Grade dos cards */
+  .site-info {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
 
-    /* 4. Mostra o botão do menu com a logo */
-    .mobile-menu-toggle {
-        display: block;
-    }
-}
-
-/* Ajustes gerais de espaçamento e fontes */
-.header-text h1,
-.todos-title {
-    font-size: 1.75rem;
-}
-
-.header-stats,
-.todos-status {
+  /* Formulário */
+  .form-group-grid {
+    grid-template-columns: 1fr;
     gap: 15px;
+  }
+
+  .location-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Ranking */
+  .ranking-podium-container {
+    flex-direction: column;
+  }
+}
+
+/* Telas pequenas (até 768px) */
+@media (max-width: 768px) {
+  /* Esconde menu lateral e ajusta conteúdo */
+  .nav {
+    display: none;
+  }
+
+  .site, 
+  .form-wrapper, 
+  .todos-itens-page, 
+  .ranking-three {
+    margin-left: 0;
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  /* Outdoor */
+  .outdoor {
+    height: auto;
+    padding: 40px 15px;
+  }
+
+  .outdoor-logo img {
+    height: 8rem;
+  }
+
+  .outdoor-info {
+    margin: 15px 0;
+    font-size: 0.9rem;
+  }
+
+  /* Botões */
+  .outdoor-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .outdoor-buttons a {
     width: 100%;
-    justify-content: space-around;
+    max-width: 250px;
+  }
+
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+  }
 }
 
-.stat-number,
-.todos-status-item .number {
+/* Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+  /* Textos menores */
+  .header .title {
+    font-size: 20px;
+  }
+
+  .outdoor-explication h1 {
+    font-size: 1.3rem;
+  }
+
+  .outdoor-slogan {
+    font-size: 1rem;
+  }
+
+  /* Grid de cards */
+  .recent-activities-grid,
+  .todos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Cards menores */
+  .todos-card-img {
+    height: 280px;
+  }
+
+  .todos-title {
     font-size: 1.5rem;
-}
+  }
 
-.outdoor-info {
-    margin-left: 20px;
-    margin-right: 20px;
-}
+  /* Rodapé */
+  footer {
+    padding: 40px 15px;
+  }
 
-
-/* Estilos para telas de até 576px (celulares pequenos) */
-@media (max-width: 576px) {
-    .outdoor-buttons {
-        flex-direction: column;
-        /* Botões um embaixo do outro */
-        align-items: center;
-    }
-
-    .outdoor-buttons a {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .header-stats,
-    .todos-status {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        /* Duas colunas */
-        text-align: center;
-    }
-
-    .header-stats .stat-item:last-child,
-    .todos-status .todos-status-item.total {
-        grid-column: 1 / -1;
-        /* O último item ocupa a largura toda */
-    }
-
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-}
 
 
 
