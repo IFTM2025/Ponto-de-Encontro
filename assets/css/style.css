@@ -2254,10 +2254,7 @@ textarea {
 @media (max-width: 992px) {
 
     /* 1. Esconde o menu lateral para fora da tela */
-    .nav {
-        transform: translateX(-100%);
-         transition: transform 0.3s ease;
-    }
+
 
     /* 2. Mostra o menu quando ele tem a classe 'is-open' */
     .nav.is-open {
@@ -2317,9 +2314,7 @@ textarea {
 
 
      /* 1. Esconde o menu lateral para fora da tela */
-    .nav {
-        transform: translateX(-100%);
-    }
+
 
     /* 2. Mostra o menu quando ele tem a classe 'is-open' */
     .nav.is-open {
@@ -2429,5 +2424,6 @@ textarea {
 }
 
 }
+
 
 
