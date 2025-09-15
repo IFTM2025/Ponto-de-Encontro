@@ -2251,238 +2251,46 @@ textarea {
 /* ===== RESPONSIVIDADE ===== */
 /* =================================================================== */
 
-@media (max-width: 992px) {
-
-    /* 1. Esconde o menu lateral para fora da tela */
-    .nav{display:none}
-
-    /* 2. Mostra o menu quando ele tem a classe 'is-open' */
-    .nav.is-open {
-        transform: translateX(0);
-        box-shadow: 5px 0 25px rgba(0, 0, 0, 0.1);
-    }
-
-    /* 3. Faz o conteúdo principal ocupar a tela inteira */
-  .site {
-    margin-left: 0;   /* ocupa toda a tela */
-    padding: 15px;
-  }
-
-    /* 4. Mostra o botão do menu com a logo */
-    .mobile-menu-toggle {
-        display: block;
-    }
-}
-
-/* Ajustes gerais de espaçamento e fontes */
-.header-text h1,
-.todos-title {
-    font-size: 1.75rem;
-}
-
-.header-stats,
-.todos-status {
-    gap: 15px;
-    width: 100%;
-    justify-content: space-around;
-}
-
-.stat-number,
-.todos-status-item .number {
-    font-size: 1.5rem;
-}
-
-  .outdoor-info {
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size: 0.9rem;
-  }
-
-  .site-info {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  /* Ranking mais compacto */
-  .ranking-podium-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
 @media (max-width: 768px) {
-
-  /* Remove o nav */
+  /* tira o nav */
   .nav {
     display: none !important;
   }
 
-  /* Faz o conteúdo ocupar 100% */
-  .site, 
-  .form-wrapper, 
-  .todos-itens-page, 
+  /* faz o conteúdo ocupar tudo */
+  .site,
+  .form-wrapper,
+  .todos-itens-page,
   .ranking-three {
     margin-left: 0 !important;
     width: 100% !important;
     padding: 15px !important;
   }
 
-  /* Diminui os títulos */
+  /* textos e botões menores */
   h1, .todos-title, .ranking-header h1 {
     font-size: 1.3rem !important;
   }
-
   h2 {
     font-size: 1rem !important;
   }
-
-  /* Diminui textos e descrições */
   p, .outdoor-info, .todos-subtitle, .ranking-header h2 {
     font-size: 0.9rem !important;
   }
-
-  /* Deixa os botões menores */
-  button, 
-  .outdoor-buttons a, 
+  button,
+  .outdoor-buttons a,
   .todos-card-btn {
     font-size: 0.85rem !important;
     padding: 8px 14px !important;
     border-radius: 8px !important;
   }
 
-  /* Ajusta as grids para 1 coluna */
-  .site-info, 
-  .quick-actions-box, 
-  .recent-activities-grid, 
+  /* grids viram 1 coluna */
+  .site-info,
+  .quick-actions-box,
+  .recent-activities-grid,
   .todos-grid {
     grid-template-columns: 1fr !important;
     gap: 16px !important;
   }
-
-  /* Ajusta imagens */
-  img {
-    max-width: 100%;
-    height: auto;
-  }
 }
-
-/* Estilos para telas de até 576px (celulares pequenos) */
-@media (max-width: 576px) {
-
-
-     /* 1. Esconde o menu lateral para fora da tela */
-
-    .nav{display:none}
-
-    /* 2. Mostra o menu quando ele tem a classe 'is-open' */
-    .nav.is-open {
-        transform: translateX(0);
-        box-shadow: 5px 0 25px rgba(0, 0, 0, 0.1);
-    }
-
-    /* 3. Faz o conteúdo principal ocupar a tela inteira */
-    .site {
-        margin-left: 0;
-        padding: 20px;
-        padding-top: 80px;
-        /* Adiciona espaço no topo para o botão não sobrepor o título */
-    }
-
-    
-    .outdoor-buttons {
-        flex-direction: column;
-        /* Botões um embaixo do outro */
-        align-items: center;
-    }
-
-    .outdoor-buttons a {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .header-stats,
-    .todos-status {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        /* Duas colunas */
-        text-align: center;
-    }
-
-    .header-stats .stat-item:last-child,
-    .todos-status .todos-status-item.total {
-        grid-column: 1 / -1;
-        /* O último item ocupa a largura toda */
-    }
-
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-
-     .outdoor-info {
-    margin: 10px;
-    font-size: 0.9rem;
-  }
-
-  /* Botões ficam um embaixo do outro */
-  .outdoor-buttons {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .outdoor-buttons a {
-    width: 100%;
-    max-width: 280px;
-  }
-
-  /* Cards de estatísticas viram 1 coluna */
-  .site-info {
-    grid-template-columns: 1fr;
-  }
-
-  /* Rodapé em coluna */
-  .footer-container {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
-
-  /* Títulos menores */
-  .ranking-header h1,
-  .todos-title {
-    font-size: 1.5rem;
-  }
-
-     .outdoor {
-    height: auto; /* deixa a altura se ajustar */
-    padding: 40px 15px;
-  }
-
-  .outdoor-logo img {
-    height: 8rem; /* reduz a logo */
-  }
-
-  .outdoor-info {
-    margin: 0;
-    font-size: 0.85rem;
-  }
-
-  .site-info {
-    grid-template-columns: 1fr; /* força 1 card por linha */
-  }
-
-  .quick-actions-box {
-    grid-template-columns: 1fr;
-  }
-
-  .recent-activities-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-}
-
-
-
-
-
-
