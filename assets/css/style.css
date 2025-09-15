@@ -25,8 +25,7 @@ body {
   --accent:#f6ea1d; --primary:#0b63e6; --shadow: 0 8px 24px rgba(14,30,60,0.08);
   --radius:12px; --maxw:1100px;
 }
-*{box-sizing:border-box;font-family:Inter, "Poppins", system-ui, Arial;}
-body{margin:0;background:var(--bg);color:#111;display:flex;justify-content:center;padding:36px 20px;}
+
 .page{width:100%;max-width:var(--maxw)}
 
 .header{
@@ -2335,4 +2334,5 @@ textarea {
         align-items: center;
     }
 }
+
 
