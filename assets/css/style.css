@@ -2313,6 +2313,16 @@ textarea {
 
 /* RESET GLOBAL PARA RESPONSIVIDADE */
 
+@media (max-width: 1200px) {
+  .site {
+    padding: 0px;
+    margin-left: 20px;
+  }
+  .nav {
+    display: none;
+  }
+}
+
 /* =================== TABLETS / NOTEBOOKS PEQUENOS =================== */
 @media (max-width: 992px) {
 
@@ -2467,6 +2477,7 @@ textarea {
     padding: 30px 15px;
   }
 }
+
 
 
 
