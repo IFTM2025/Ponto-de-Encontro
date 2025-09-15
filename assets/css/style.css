@@ -2324,66 +2324,41 @@ textarea {
 }
 
 /* =================== TABLETS / NOTEBOOKS PEQUENOS =================== */
-@media (max-width: 992px) {
-
-  /* Remove margem do menu lateral */
-  .site,
-  .form-wrapper,
-  .todos-itens-page,
-  .ranking-three {
-    margin-left: 0;
+@media (max-width: 900px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
     width: 100%;
-    max-width: 100%;
     padding: 20px;
   }
 
-  /* Grids viram coluna */
-  .site-info,
-  .recent-activities-grid,
-  .quick-actions-box,
-  .todos-grid,
-  .ranking-podium-container,.recent-category-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-      justify-self:center;
-      align-self:center;
-    gap: 20px;
-    width: 80%;
+  .site {
+    margin: 0 auto;
+    width: 100%;
   }
 
-  /* Cards ocupam largura total */
-  .outdoor,
-  .card,
-  .todos-card,
-  .recent-category-card,
-  .registered-itens-box,
-  .delivered-itens-box,
-  .success-rate-box,
-  .active-guardians-box,
-  .search-box,
-  .register-box,
-  .all-itens-box,
-  .guardians-box, .footer {
-    width: 80%;
+  .nav {
+    display: none;
   }
 
-  /* Botões */
+  .outdoor-info {
+    font-size: 0.9rem;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .outdoor-logo img {
+    height: 12rem;
+  }
+
   .outdoor-buttons {
     flex-direction: column;
-    gap: 12px;
-    width: 80%;
     align-items: center;
   }
 
-  .outdoor-buttons a,
-  button,
-  .btn {
-    width: 80% ;
-    max-width: 320px;
-    margin: auto;
-    display: block;
-    font-size: 1rem;
+  .outdoor-buttons a {
+    width: 80%;
     padding: 14px 20px;
     border-radius: 12px;
   }
@@ -2395,8 +2370,8 @@ textarea {
     height: auto;
     padding: 40px 15px;
     text-align: center;
-      justify-content:center;
-      align-items:center;
+    justify-content:center;
+    align-items:center;
   }
 
   .outdoor-logo img {
@@ -2426,16 +2401,48 @@ textarea {
 
   .footer-about-column {
     max-width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Fix de centralização do footer e outdoor */
+  footer {
+    padding: 40px 20px;
+  }
+  
+  .outdoor {
+    margin: 0 auto 20px;
+  }
+  
+  /* Centralizando os botões de ações rápidas */
+  .quick-actions-box {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Fix de centralização de títulos cortados */
+  .recent-activities-header {
+    text-align: center;
+  }
+  
+  /* Fixando o formulário de cadastro */
+  .form-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
   }
 }
 
 /* =================== CELULARES PEQUENOS =================== */
 @media (max-width: 480px) {
   .header .title {
-    font-size: 20px;
+    font-size: 24px;
   }
 
-  /* Outdoor */
+  .outdoor-info {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .outdoor-explication h1 {
     font-size: 1.2rem;
   }
@@ -2444,39 +2451,23 @@ textarea {
     font-size: 0.9rem;
   }
 
-  /* Cards menores */
-  .todos-card-img {
-    height: 240px;
+  .nav-header-name-first {
+    font-size: 1rem;
   }
 
-  .todos-title {
-    font-size: 1.3rem;
+  .nav-header-name-second {
+    font-size: 0.65rem;
   }
 
-  /* Categorias */
-  .recent-activities-grid {
-    gap: 15px;
+  .search-box, .register-box, .all-itens-box, .guardians-box {
+    padding: 20px;
   }
 
   .recent-category-card {
     padding: 15px;
-    width: 80%;
-  }
-
-  /* Botões maiores */
-  .outdoor-buttons a,
-  button,
-  .btn {
-    font-size: 1.05rem;
-    padding: 16px 24px;
-    border-radius: 14px;
-  }
-
-  /* Rodapé */
-  footer {
-    padding: 30px 15px;
   }
 }
+
 
 
 
