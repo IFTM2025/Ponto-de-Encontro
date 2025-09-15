@@ -2263,11 +2263,11 @@ textarea {
 /* ===== RESPONSIVIDADE ===== */
 /* =================================================================== */
 
-@media (max-width: 992px) {
+@media (max-width: 1268px) {
 
     /* 1. Esconde o menu lateral para fora da tela */
     .nav {
-        transform: translateX(-100%);
+       display:none;
     }
 
     /* 2. Mostra o menu quando ele tem a classe 'is-open' */
@@ -2347,6 +2347,7 @@ textarea {
         align-items: center;
     }
 }
+
 
 
 
