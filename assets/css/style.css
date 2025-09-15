@@ -394,6 +394,10 @@ footer {
     line-height: 1.6;
     margin-top: 15px;
     width: 100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
 }
 
 .footer-logomarca {
@@ -2334,6 +2338,7 @@ textarea {
         align-items: center;
     }
 }
+
 
 
 
