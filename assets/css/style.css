@@ -36,7 +36,7 @@ body{margin:0;background:var(--bg);color:#111;display:flex;justify-content:cente
 }
 .header .title{font-size:28px;font-weight:800}
 .header .subtitle{opacity:0.95}
-.hero-cta{display:flex;gap:12px}
+.hero-cta{display:flex;gap:12.5px}
 .btn{background:var(--accent);border:none;padding:10px 14px;border-radius:10px;font-weight:700;cursor:pointer}
 
 .layout{display:grid;grid-template-columns:1fr 380px;gap:20px;align-items:start}
@@ -2335,3 +2335,4 @@ textarea {
         align-items: center;
     }
 }
+
