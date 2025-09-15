@@ -2256,6 +2256,7 @@ textarea {
     /* 1. Esconde o menu lateral para fora da tela */
     .nav {
         transform: translateX(-100%);
+         transition: transform 0.3s ease;
     }
 
     /* 2. Mostra o menu quando ele tem a classe 'is-open' */
@@ -2300,6 +2301,16 @@ textarea {
     margin-left: 20px;
     margin-right: 20px;
 }
+
+  .site-info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Ranking mais compacto */
+  .ranking-podium-container {
+    flex-direction: column;
+    align-items: center;
+  }
 
 
 /* Estilos para telas de até 576px (celulares pequenos) */
@@ -2357,4 +2368,39 @@ textarea {
         align-items: center;
     }
 
+     .outdoor-info {
+    margin: 10px;
+    font-size: 0.9rem;
+  }
+
+  /* Botões ficam um embaixo do outro */
+  .outdoor-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .outdoor-buttons a {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  /* Cards de estatísticas viram 1 coluna */
+  .site-info {
+    grid-template-columns: 1fr;
+  }
+
+  /* Rodapé em coluna */
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  /* Títulos menores */
+  .ranking-header h1,
+  .todos-title {
+    font-size: 1.5rem;
+  }
+
 }
+
