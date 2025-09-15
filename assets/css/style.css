@@ -2372,10 +2372,12 @@ textarea {
     text-align: center;
     justify-content:center;
     align-items:center;
+      justify-self:center;
+      align-self:center;
   }
 
   .outdoor-logo img {
-    height: 8rem;
+    height: 6rem;
   }
 
   .outdoor-explication h1 {
@@ -2428,7 +2430,7 @@ textarea {
   .form-wrapper {
     margin-left: auto;
     margin-right: auto;
-    max-width: 90%;
+    max-width: 98.5%;
   }
 }
 
@@ -2467,6 +2469,7 @@ textarea {
     padding: 15px;
   }
 }
+
 
 
 
