@@ -2266,12 +2266,10 @@ textarea {
     }
 
     /* 3. Faz o conteúdo principal ocupar a tela inteira */
-    .site {
-        margin-left: 0;
-        padding: 20px;
-        padding-top: 80px;
-        /* Adiciona espaço no topo para o botão não sobrepor o título */
-    }
+  .site {
+    margin-left: 0;   /* ocupa toda a tela */
+    padding: 15px;
+  }
 
     /* 4. Mostra o botão do menu com a logo */
     .mobile-menu-toggle {
@@ -2297,10 +2295,11 @@ textarea {
     font-size: 1.5rem;
 }
 
-.outdoor-info {
+  .outdoor-info {
     margin-left: 20px;
     margin-right: 20px;
-}
+    font-size: 0.9rem;
+  }
 
   .site-info {
     grid-template-columns: repeat(2, 1fr);
@@ -2402,5 +2401,33 @@ textarea {
     font-size: 1.5rem;
   }
 
+     .outdoor {
+    height: auto; /* deixa a altura se ajustar */
+    padding: 40px 15px;
+  }
+
+  .outdoor-logo img {
+    height: 8rem; /* reduz a logo */
+  }
+
+  .outdoor-info {
+    margin: 0;
+    font-size: 0.85rem;
+  }
+
+  .site-info {
+    grid-template-columns: 1fr; /* força 1 card por linha */
+  }
+
+  .quick-actions-box {
+    grid-template-columns: 1fr;
+  }
+
+  .recent-activities-grid {
+    grid-template-columns: 1fr;
+  }
 }
+
+}
+
 
