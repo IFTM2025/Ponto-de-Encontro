@@ -43,7 +43,7 @@ body {
 
 .card{background:var(--card);padding:20px;border-radius:12px;box-shadow:var(--shadow)}
 .section{margin-bottom:18px}
-h2{margin:0 0 8px;font-size:20px}
+
 p.lead{margin:0 0 12px;color:var(--muted);line-height:1.45}
 
 .philosophy{display:grid;gap:10px}
@@ -2334,5 +2334,6 @@ textarea {
         align-items: center;
     }
 }
+
 
 
