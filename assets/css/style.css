@@ -2254,7 +2254,7 @@ textarea {
 @media (max-width: 992px) {
 
     /* 1. Esconde o menu lateral para fora da tela */
-
+    .nav{display:none}
 
     /* 2. Mostra o menu quando ele tem a classe 'is-open' */
     .nav.is-open {
@@ -2308,7 +2308,10 @@ textarea {
     align-items: center;
   }
 
-
+@media (max-width: 768px){ .nav{display:none}
+  margin-top: 70px;
+    margin-left: 0; /* tira espaço lateral */
+    padding: 10px;}
 
 /* Estilos para telas de até 576px (celulares pequenos) */
 @media (max-width: 576px) {
@@ -2316,6 +2319,7 @@ textarea {
 
      /* 1. Esconde o menu lateral para fora da tela */
 
+    .nav{display:none}
 
     /* 2. Mostra o menu quando ele tem a classe 'is-open' */
     .nav.is-open {
@@ -2425,6 +2429,7 @@ textarea {
 }
 
 }
+
 
 
 
