@@ -1171,9 +1171,18 @@ footer .footer-contact img {
     transition: all 0.3 ease;
 }
 
+
 .recent-category-card-link {
     text-decoration: none;
     overflow: none;
+    background-color: white;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     transition: all 0.3 ease;
 }
 
@@ -2338,6 +2347,7 @@ textarea {
         align-items: center;
     }
 }
+
 
 
 
