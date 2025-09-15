@@ -2270,6 +2270,11 @@ textarea {
 
 /* Telas grandes mas com menu escondido */
 @media (max-width: 1268px) {
+
+     .nav {
+    display: none;
+  }
+
   .site {
     margin-left: 0;   /* remove o empurrão lateral */
     width: 100;
@@ -2298,6 +2303,8 @@ textarea {
     width: fit-content;
   }
 }
+
+    @media (max-width: 1087px) {}
 
 /* Até 992px (notebooks/tablets) */
 @media (max-width: 992px) {
@@ -2440,6 +2447,7 @@ textarea {
     overflow-x: hidden;
   }
 }
+
 
 
 
