@@ -2336,7 +2336,7 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
-      justfiy-self:center;
+      justify-self:center;
       align-self:center;
     gap: 20px;
     width: 80%;
@@ -2362,14 +2362,14 @@ textarea {
   .outdoor-buttons {
     flex-direction: column;
     gap: 12px;
-    width: 100%;
+    width: 80%;
     align-items: center;
   }
 
   .outdoor-buttons a,
   button,
   .btn {
-    width: 100% ;
+    width: 80% ;
     max-width: 320px;
     margin: auto;
     display: block;
@@ -2385,6 +2385,8 @@ textarea {
     height: auto;
     padding: 40px 15px;
     text-align: center;
+      justify-content:center;
+      align-items:center;
   }
 
   .outdoor-logo img {
@@ -2413,7 +2415,7 @@ textarea {
   }
 
   .footer-about-column {
-    max-width: 100%;
+    max-width: 80%;
   }
 }
 
@@ -2465,6 +2467,7 @@ textarea {
     padding: 30px 15px;
   }
 }
+
 
 
 
