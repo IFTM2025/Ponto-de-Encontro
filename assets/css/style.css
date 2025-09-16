@@ -396,8 +396,10 @@ footer {
     width: 100%;
     display:flex;
     flex-direction:column;
-    align-items:center;
+    align-items:flex-start;
     justify-content:center;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .footer-logomarca {
@@ -2578,3 +2580,4 @@ img {
         height: auto;
     }
 }
+
