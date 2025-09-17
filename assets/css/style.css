@@ -2169,17 +2169,17 @@ textarea {
 }
 
 #ranking-image-ouro {
-    border-color: linear-gradient(to left, #60c1fa, #2563eb);
-      border: linear-gradient(to left, #2bf791 0%, #53b0ea 100%);
+    border-color: linear-gradient(to left, #ffc107, #ff9800);
+      border: linear-gradient(to left, #ffc107 0%, #ff9800 100%);
 }
 
 #ranking-image-prata {
-    border-color: linear-gradient(to left, #60c1fa, #2563eb);
-      border: linear-gradient(to left, #2bf791 0%, #53b0ea 100%);
+    border-color: linear-gradient(to left, #c0c0c0, #a0a0a0);
+      border: linear-gradient(to left, #c0c0c0 0%, #a0a0a0 100%);
 }
 
 #ranking-image-diamante {
-    border-color: linear-gradient(to left, #60c1fa, #2563eb);
+    border-color: linear-gradient(to left, #2bf791, #53b0ea);
       border: linear-gradient(to left, #2bf791 0%, #53b0ea 100%);
 }
 
@@ -2535,6 +2535,7 @@ textarea {
         
     }
 }
+
 
 
 
