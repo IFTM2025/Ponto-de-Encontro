@@ -67,7 +67,6 @@ p.lead{margin:0 0 12px;color:var(--muted);line-height:1.45}
 
 form textarea{resize:vertical}
 
-footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
 
 
 /*Melhora do comentario*/
@@ -2581,5 +2580,6 @@ textarea {
         height: auto;
     }
 }
+
 
 
