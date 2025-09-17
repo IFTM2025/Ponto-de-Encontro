@@ -1178,6 +1178,7 @@ footer .footer-contact img {
 
 .recent-category-card-link>div {
     transition: all 0.3 ease;
+     transform: translateY(-5px);
 }
 
 .recent-category-card {
@@ -2571,6 +2572,7 @@ textarea {
         
     }
 }
+
 
 
 
