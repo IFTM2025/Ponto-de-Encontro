@@ -2259,12 +2259,18 @@ textarea {
 
 
 @media (max-width: 1200px) {
-    .nav {
-        transform: translateX(-100%); /* Esconde o menu para fora da tela */
-        /* display: none; também funciona, mas a transição é mais suave */
-    }
-
-    main.site {
+      .nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 260px;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 1000;
+          transition: all 0.3s ease;
+  }
+    .site {
         margin-left: 0; /* Ocupa a largura toda */
         padding: 30px;
     }
@@ -2276,8 +2282,22 @@ textarea {
 
 /* --- TABLETS --- */
 @media (max-width: 992px) {
-    main.site {
+
+      .nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 260px;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 1000;
+          transition: all 0.3s ease;
+  }
+    
+    .site {
         padding: 20px;
+        margin-left: 0;
     }
 
     /* Ajusta grids para terem menos colunas */
@@ -2297,19 +2317,45 @@ textarea {
 
 /* --- CELULARES GRANDES E TABLETS PEQUENOS --- */
 @media (max-width: 768px) {
+
+      .site {
+    margin-left: 0;
+    padding-top: 0;
+  }
+
+      footer {
+    padding: 40px 20px;
+  }
+    
     body {
         /* Remove o padding lateral do body, o main.site já cuida disso */
         padding: 0;
     }
+    .main-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+      footer {
+    padding: 40px 20px;
+  }
 
+    .quick-actions-box {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .recent-activities-header {
+    text-align: center;
+  }
     /* Grids passam a ter uma coluna só */
     .site-info, .quick-actions-box, .recent-activities-grid, .todos-grid {
         grid-template-columns: 1fr;
     }
 
     .outdoor {
-        padding: 40px 20px;
+        padding: 40px 15px;
         height: auto;
+        margin: 0 auto 20px;
     }
     
     .outdoor-info {
@@ -2330,7 +2376,12 @@ textarea {
         flex-direction: column;
         text-align: center;
         align-items: center;
+        gap: 25px;
     }
+      .footer-about-column {
+    max-width: 80%;
+    margin: 0 auto;
+  }
 
     .social-icons, .footer-contact li {
         justify-content: center;
@@ -2339,6 +2390,7 @@ textarea {
     /* Formulário de Cadastro */
     .form-wrapper {
         padding: 20px;
+        max-width: 98.75%;
     }
     .form-group-grid, .location-grid {
         grid-template-columns: 1fr;
@@ -2347,7 +2399,7 @@ textarea {
 
 /* --- CELULARES --- */
 @media (max-width: 576px) {
-    main.site {
+    site {
         padding: 15px;
     }
     
@@ -2380,6 +2432,7 @@ textarea {
         justify-content: center; /* Centraliza os botões de filtro */
     }
 }
+
 
 
 
