@@ -78,7 +78,7 @@ img {
     width: 100%;
 }
 
-main.site {
+.site {
     flex: 1; /* Ocupa o espaço restante */
     margin-left: var(--largura-nav);
     padding: 40px;
@@ -320,7 +320,7 @@ p.lead{margin:0 0 12px;color:var(--texto-secundario);line-height:1.45}
     .nav {
         transform: translateX(-100%); /* Esconde o menu para fora da tela */
     }
-    main.site {
+    .site {
         margin-left: 0; /* Ocupa a largura toda */
         width: 100%;
         padding: 30px; /* Adiciona respiro nas laterais */
@@ -329,7 +329,7 @@ p.lead{margin:0 0 12px;color:var(--texto-secundario);line-height:1.45}
 
 /* --- TABLETS --- */
 @media (max-width: 992px) {
-    main.site {
+    .site {
         padding: 20px;
     }
     .outdoor-info {
@@ -348,7 +348,7 @@ p.lead{margin:0 0 12px;color:var(--texto-secundario);line-height:1.45}
         padding: 0;
     }
 
-    main.site {
+    .site {
         padding: 20px 15px; /* Padding vertical e horizontal para celular */
     }
     
@@ -414,3 +414,4 @@ p.lead{margin:0 0 12px;color:var(--texto-secundario);line-height:1.45}
         justify-content: center;
     }
 }
+
