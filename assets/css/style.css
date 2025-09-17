@@ -2256,322 +2256,131 @@ textarea {
 
 /* =================================================================== */
 
-/* =================================================================== */
-/* ===== RESPONSIVIDADE ===== */
-/* =================================================================== */
 
-/* Telas grandes mas com menu escondido */
-@media (max-width: 1268px) {
-
-     .nav {
-    display: none;
-  }
-
-  .site {
-    margin-left: 0;   /* remove o empurrão lateral */
-    width: 100%;
-    max-width: 100%;
-    padding: 0 15px;             /* adiciona respiro nas laterais */
-    box-sizing: border-box;      /* garante que padding não estoure largura */
-  }
-
-  body, html {
-    overflow-x: hidden; /* bloqueia rolagem lateral */
-  }
-
-  /* Garante que grids fiquem dentro da tela */
-  .recent-activities-grid,
-  .site-info,
-  .quick-actions-box {
-    grid-template-columns: 1fr;
-    width: 100%;
-  }
-
-  /* Botão "Todas Categorias" centralizado */
-  .see-all-link {
-    margin: 20px auto;
-    text-align: center;
-    display: block;
-    width: fit-content;
-  }
-}
-
- 
-
-/* Até 992px (notebooks/tablets) */
-/* =================================================================== */
-/* ===== RESPONSIVIDADE COMPLETA ===== */
-/* =================================================================== */
-
-/* RESET GLOBAL PARA RESPONSIVIDADE */
 
 @media (max-width: 1200px) {
-  .site {
-    padding: 0px;
-    margin-left: 20px;
-  }
-  .nav {
-    display: none;
-  }
-    img {
-    max-width: 100%;
-    height: auto;
-}
+    .nav {
+        transform: translateX(-100%); /* Esconde o menu para fora da tela */
+        /* display: none; também funciona, mas a transição é mais suave */
+    }
+
+    main.site {
+        margin-left: 0; /* Ocupa a largura toda */
+        padding: 30px;
+    }
+
+    .footer-container {
+        padding: 0 30px;
+    }
 }
 
-/* =================== TABLETS / NOTEBOOKS PEQUENOS =================== */
+/* --- TABLETS --- */
 @media (max-width: 992px) {
-  .nav {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 260px;
-    height: 100vh;
-    background-color: #fff;
-    z-index: 1000;
-  }
-  .site {
-    margin-left: 0;
-  }
+    main.site {
+        padding: 20px;
+    }
+
+    /* Ajusta grids para terem menos colunas */
+    .site-info, .quick-actions-box {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    
+    .todos-grid {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    .outdoor-info {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
 }
 
-@media (max-width: 768px) {
-  .main-container {
-    flex-direction: column;
-    padding: 20px;
-  }
-
-  .site {
-    margin-left: 0;
-    padding-top: 0;
-  }
-
-  .outdoor {
-    padding: 40px 15px;
-  }
-  
-  .footer-container {
-    flex-direction: column;
-    text-align: center;
-    gap: 25px;
-  }
-
-  .footer-about-column {
-    max-width: 80%;
-    margin: 0 auto;
-  }
-  
-  footer {
-    padding: 40px 20px;
-  }
-  
-  .outdoor {
-    margin: 0 auto 20px;
-  }
-  
-  .quick-actions-box {
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .recent-activities-header {
-    text-align: center;
-  }
-  
-  .form-wrapper {
-    margin: 0 auto;
-    max-width: 98.5%;
-  }
-
-}
-
-@media (max-width: 576px) {
-  .footer-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .form-wrapper {
-    padding: 20px;
-  }
-  
-  /* Ajustando o stepper para celular */
-  .stepper {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .step {
-    padding: 0 5px;
-    font-size: 12px;
-  }
-  .step span {
-    width: 25px;
-    height: 25px;
-  }
-
-  .form-buttons {
-    flex-direction: column;
-    gap: 10px;
-  }
-}
-
-/* ================== TABLET ================== */
-@media (max-width: 900px) {
-  .main-container {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: 100%;
-    padding: 20px;
-  }
-
-  .site {
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  .nav {
-    display: none;
-  }
-
-  .outdoor-info {
-    font-size: 0.9rem;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  .outdoor-logo img {
-    height: 12rem;
-  }
-
-  .outdoor-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .outdoor-buttons a {
-    width: 80%;
-    padding: 14px 20px;
-    border-radius: 12px;
-  }
-}
-
-/* =================== CELULARES PEQUENOS =================== */
-@media (max-width: 480px) {
-  .header .title {
-    font-size: 24px;
-  }
-
-  .outdoor-info {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .outdoor-explication h1 {
-    font-size: 1.2rem;
-  }
-
-  .outdoor-slogan {
-    font-size: 0.9rem;
-  }
-
-  .nav-header-name-first {
-    font-size: 1rem;
-  }
-
-  .nav-header-name-second {
-    font-size: 0.65rem;
-  }
-
-  .search-box, .register-box, .all-itens-box, .guardians-box {
-    padding: 20px;
-  }
-
-  .recent-category-card {
-    padding: 15px;
-  }
-  
-  /* Ajustes finais no formulário para telas muito pequenas */
-  .form-header h1 {
-    font-size: 24px;
-  }
-  .form-header p {
-    font-size: 14px;
-  }
-  .form-group label {
-    font-size: 14px;
-  }
-  .form-group .form-control {
-    padding: 10px;
-    font-size: 14px;
-  }
-  .form-buttons button,
-  .form-buttons label {
-    font-size: 14px;
-    padding: 10px 20px;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* --- Ajustes de Responsividade --- */
-
-
-.container {
-    max-width: 1200px;
-    width: 100%;
-}
-
-/* Ajustes para tablets e celulares */
+/* --- CELULARES GRANDES E TABLETS PEQUENOS --- */
 @media (max-width: 768px) {
     body {
-        padding: 10px;
-        align-items: flex-start;
+        /* Remove o padding lateral do body, o main.site já cuida disso */
+        padding: 0;
     }
 
-    .nav {
-        width: 100%;
-        flex-direction: row;
-        overflow-x: auto;
+    /* Grids passam a ter uma coluna só */
+    .site-info, .quick-actions-box, .recent-activities-grid, .todos-grid {
+        grid-template-columns: 1fr;
     }
 
-    .nav-header {
+    .outdoor {
+        padding: 40px 20px;
+        height: auto;
+    }
+    
+    .outdoor-info {
+        margin: 0 10px 20px 10px;
+    }
+
+    .outdoor-buttons {
         flex-direction: column;
         align-items: center;
-        text-align: center;
+        width: 100%;
+    }
+    .outdoor-buttons a {
+        width: 90%;
+        max-width: 300px;
     }
 
-    .page {
-        max-width: 100%;
-    }
-}
-
-/* Ajustes para celulares pequenos */
-@media (max-width: 480px) {
-    .header {
+    .footer-container {
         flex-direction: column;
         text-align: center;
-        padding: 16px;
+        align-items: center;
     }
 
-    .header img {
-        max-width: 150px;
-        height: auto;
-        
+    .social-icons, .footer-contact li {
+        justify-content: center;
+    }
+
+    /* Formulário de Cadastro */
+    .form-wrapper {
+        padding: 20px;
+    }
+    .form-group-grid, .location-grid {
+        grid-template-columns: 1fr;
     }
 }
+
+/* --- CELULARES --- */
+@media (max-width: 576px) {
+    main.site {
+        padding: 15px;
+    }
+    
+    .outdoor-logo img {
+        height: 10rem;
+    }
+
+    .outdoor-explication h1, .todos-title {
+        font-size: 1.5rem;
+    }
+
+    .form-wrapper {
+        padding: 20px 15px;
+    }
+    
+    .stepper {
+        font-size: 12px;
+    }
+
+    .form-navigation {
+        flex-direction: column-reverse; /* Botão de continuar fica em cima */
+        gap: 15px;
+        align-items: stretch;
+    }
+    .form-navigation .btn {
+        width: 100%;
+    }
+    
+    .todos-filters-top, .todos-filters-bottom {
+        justify-content: center; /* Centraliza os botões de filtro */
+    }
+}
+
 
 
 
