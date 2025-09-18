@@ -12,6 +12,7 @@ body {
     padding: 40px 20px;
 }
 
+#form-step-3{diplay:flex; flex-direction:column}
 
 /*Sobre nós*/
 :root{
@@ -2535,6 +2536,7 @@ textarea {
         
     }
 }
+
 
 
 
